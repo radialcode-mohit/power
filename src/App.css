@@ -1,38 +1,317 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Comic Gecko";
+  src: url(../src/assets/ComicGecko-GOaXO.otf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  text-decoration: none !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ff_comic {
+  font-family: "Comic Gecko" !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+:root {
+  --fs-sm: 16px;
+  --fs-md: 36px;
+  --clr-green: #025928;
+}
+.bg_green {
+  background-color: var(--clr-green) !important;
+}
+.fs_sm {
+  font-size: var(--fs-sm) !important;
+}
+.clr_fff_opac {
+  color: rgba(255, 255, 255, 0.7);
+}
+.clr_fff_opac8 {
+  color: rgba(255, 255, 255, 0.8);
+}
+.ff_callibary {
+  font-family: Calibri;
+}
+.fw_700 {
+  font-weight: 700;
+}
+/* 1 */
+.white_before {
+  position: relative;
+}
+.white_before::before {
+  content: "";
+  height: 0;
+  width: 138%;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  left: -7px;
+  top: -27px;
+  transition: all 0.2s linear;
+}
+.white_before:hover::before {
+  height: 253%;
+}
+/* 2 */
+.white_before2 {
+  position: relative;
+}
+.white_before2::before {
+  content: "";
+  height: 0;
+  width: 114%;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  left: -7px;
+  top: -27px;
+  transition: all 0.2s linear;
+}
+.white_before2:hover::before {
+  height: 253%;
+}
+.white_before3 {
+  position: relative;
+}
+.white_before3::before {
+  content: "";
+  height: 0;
+  width: 129%;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  left: -7px;
+  top: -27px;
+  transition: all 0.2s linear;
+}
+.white_before3:hover::before {
+  height: 253%;
+}
+.white_before4 {
+  position: relative;
+}
+.white_before4::before {
+  content: "";
+  height: 0;
+  width: 124%;
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  left: -3px;
+  top: -27px;
+  transition: all 0.2s linear;
+}
+.white_before4:hover::before {
+  height: 253%;
+}
+.hover_underline {
+  position: relative;
+}
+.hover_underline::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: -7px;
+  bottom: -17px;
+  transition: all 0.2s linear;
+  background: #26a646;
+}
+.hover_underline:hover::before {
+  width: 135%;
+}
+.hover_underline2 {
+  position: relative;
+}
+.hover_underline2::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: -11px;
+  bottom: -17px;
+  transition: all 0.2s linear;
+  background: #26a646;
+}
+.hover_underline2:hover::before {
+  width: 118%;
+}
+.hover_underline3 {
+  position: relative;
+}
+.hover_underline3::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: -11px;
+  bottom: -17px;
+  transition: all 0.2s linear;
+  background: #26a646;
+}
+.hover_underline3:hover::before {
+  width: 136%;
+}
+.hover_underline4 {
+  position: relative;
+}
+.hover_underline4::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: -7px;
+  bottom: -17px;
+  transition: all 0.2s linear;
+  background: #26a646;
+}
+.hover_underline4:hover::before {
+  width: 133%;
+}
+.border_2px_green {
+  border: 2px solid #26a646;
+}
+.p_10_28 {
+  padding: 10px 28px;
+}
+.br_30 {
+  border-radius: 30px;
+}
+.bg_btn_green {
+  background: #26a646;
+}
+.nav_container {
+  height: 30px;
+  width: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.nav_container span {
+  height: 3px;
+  width: 100%;
+  display: block;
+  background: #26a646;
+}
+.transition {
+  transition: all 0.2s linear;
+}
+.hover_bg_btn_green:hover {
+  background: #26a646 !important;
+}
+.bg_btn_trans {
+  background-color: transparent;
+}
+.bg_header {
+  background-image: url(../src/assets/images/img/bg_img.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.my_container {
+  max-width: 1140px !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.green_div {
+  max-width: 584px;
+  background: linear-gradient(
+      162.43deg,
+      #26a646 0.23%,
+      #025928 22.1%,
+      #025928 76.31%,
+      #26a646 103.78%
+    ),
+    #025928;
+  box-shadow: 0px 20px 80px rgba(16, 18, 17, 0.01);
+  border-radius: 8px;
+  padding: 21px 20px;
+}
+.blurdiv {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 16px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(18.5px);
+  border-radius: 8px;
+}
+.crlces {
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 100%;
+  padding: 26px 0 26px;
+  width: 117px;
+  height: 112px;
+}
+.max_w_300px {
+  max-width: 500px;
+}
+.cross_pos {
+  bottom: 8%;
+  /* border-bottom-right-radius: 8%; */
+  right: 9%;
+}
+.rate i,
+.rate i:hover ~ i {
+  font-size: 23px;
+  color: #d9d9d9;
+  text-shadow: none;
+  transition: color 200ms, text-shadow 200ms;
+  transition-delay: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.rate:hover i {
+  font-size: 23px;
+  color: #fc0;
+  text-shadow: #fc0 0 0 20px;
+}
+.rate:hover i:nth-child(2) {
+  transition-delay: 30ms;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.rate:hover i:nth-child(3) {
+  transition-delay: 60ms;
+}
+
+.rate:hover i:nth-child(4) {
+  transition-delay: 90ms;
+}
+
+.rate:hover i:nth-child(5) {
+  transition-delay: 120ms;
+}
+
+.rate i {
+  cursor: pointer;
+  font-style: normal;
+}
+.topdots_pos {
+  z-index: 2;
+  right: -104px !important;
+}
+.botom_dots {
+  bottom: -63px;
+  left: -124px;
+}
+@media (max-width: 992px) {
+  .mobileiew {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #26a64687;
+    backdrop-filter: blur(20px);
+    transition: all 0.2s linear;
   }
-  to {
-    transform: rotate(360deg);
+  .left_0 {
+    left: 0;
+  }
+  .left_100 {
+    left: -100%;
+  }
+  .close_img_pos {
+    right: 50px;
+    top: 50px;
+  }
+}
+@media (max-width: 375px) {
+  .crlces {
+    width: 95px;
+    height: 85px;
   }
 }
