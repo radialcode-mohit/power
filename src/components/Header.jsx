@@ -10,9 +10,9 @@ import bottomdots from "../assets/images/img/leftdot.png";
 import { Col, Row } from "react-bootstrap";
 const Header = () => {
   return (
-    <section className="bg_header">
+    <section className="bg_header ">
       <MyNav />
-      <div className="my_container mt-5">
+      <div className="my_container mt-4 mt-lg-5  min_vh_">
         <div className="green_div mx-auto position-relative">
           <img
             src={topdots}
@@ -138,8 +138,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className="pb-5"></div>
-      <div className="pb-5"></div>
+      <div className="pb-5 d-xl-none"></div>
+      <div className="pb-5 d-xl-none"></div>
       {/* <div className="pb-5"></div> */}
     </section>
   );

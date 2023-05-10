@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import logo from "../assets/images/svg/logo.svg";
-import close from "../assets/images/img/close.png";
+import close from "../assets/images/svg/close.svg";
 const MyNav = () => {
   const [first, setfirst] = useState(false);
   const [second, setsecond] = useState(0);
@@ -15,8 +15,8 @@ const MyNav = () => {
           <ul
             className={
               first
-                ? "d-flex mb-0 ps-0 ms-lg-5 ps-lg-5 flex-column flex-lg-row justify-content-center align-items-center mobileiew left_0"
-                : "d-flex mb-0 ps-0 ms-lg-5 ps-lg-5 flex-column flex-lg-row justify-content-center align-items-center mobileiew left_100 "
+                ? "z_index_500 d-flex mb-0 ps-0 ms-lg-5 ps-lg-5 flex-column flex-lg-row justify-content-center align-items-center mobileiew left_0"
+                : "z_index_500 d-flex mb-0 ps-0 ms-lg-5 ps-lg-5 flex-column flex-lg-row justify-content-center align-items-center mobileiew left_100 "
             }
           >
             <li className=" mt-4 mt-lg-0  white_before ms-lg-5">
@@ -57,7 +57,7 @@ const MyNav = () => {
             <img
               src={close}
               alt="close"
-              className="d-lg-none position-absolute close_img_pos"
+              className="max_32 d-lg-none position-absolute close_img_pos"
               onClick={() => {
                 setfirst(false);
               }}
