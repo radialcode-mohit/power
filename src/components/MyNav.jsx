@@ -20,14 +20,17 @@ const MyNav = () => {
             }
           >
             <li className=" mt-4 mt-lg-0  white_before ms-lg-5">
-              <a href="#" className="hover_underline ff_comic fs_sm text-white">
+              <a
+                href="#"
+                className=" pt-lg-5 hover_underline ff_comic fs_sm text-white"
+              >
                 HOME
               </a>
             </li>
             <li className=" mt-4 mt-lg-0 ms-lg-3 ps-lg-1 white_before2">
               <a
                 href="#"
-                className="hover_underline2 ff_comic fs_sm text-white text-uppercase"
+                className=" pt-lg-5 hover_underline2 ff_comic fs_sm text-white text-uppercase"
               >
                 Campgrounds
               </a>
@@ -35,7 +38,7 @@ const MyNav = () => {
             <li className=" mt-4 mt-lg-0 ms-lg-3 ps-lg-1 white_before3">
               <a
                 href="#"
-                className="hover_underline3 ff_comic fs_sm text-white"
+                className=" pt-lg-5 hover_underline3 ff_comic fs_sm text-white"
               >
                 About us
               </a>
@@ -43,7 +46,7 @@ const MyNav = () => {
             <li className=" mt-4 mt-lg-0 ms-lg-3 ps-lg-1 white_before4">
               <a
                 href="#"
-                className="hover_underline4 ff_comic fs_sm text-white"
+                className=" pt-lg-5 hover_underline4 ff_comic fs_sm text-white"
               >
                 Contact
               </a>
